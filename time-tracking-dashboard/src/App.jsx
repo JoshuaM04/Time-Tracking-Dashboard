@@ -2,7 +2,7 @@ import portrait from './assets/images/image-jeremy.png';
 
 export default function Dashboard() {
   return (
-    <div className="parent-container min-h-screen p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
+    <div className="parent-container min-h-full p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
       <main className="min-h-full grid grid-cols-1 grid-rows-7 gap-4 w-[315px]">
         <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
           <div className="flex items-center gap-5 mb-[2rem] bg-indigo-500 rounded-xl p-[20px] m-[-20px]">
