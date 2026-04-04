@@ -20,74 +20,98 @@ export default function Dashboard() {
         </div>
 
         <section className="bg-orange-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Work</h2>
-            5hrs  daily
-            Previous - 7hrs  daily
-            32hrs  weekly
-            Previous - 36hrs  weekly
-            103hrs  monthly
-            Previous - 128hrs  monthly
+            <p className="text-3xl">32hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              5hrs  daily
+              Previous - 7hrs  daily
+              32hrs  weekly
+              Previous - 36hrs  weekly
+              103hrs  monthly
+              Previous - 128hrs  monthly
+            </span>
           </div>
         </section>
 
         <section className="bg-blue-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Play</h2>
-            1hr  daily
-            Previous - 2hrs  daily
-            10hrs  weekly
-            Previous - 8hrs  weekly
-            23hrs  monthly
-            Previous - 29hrs  monthly
+            <p className="text-3xl">10hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              1hr  daily
+              Previous - 2hrs  daily
+              10hrs  weekly
+              Previous - 8hrs  weekly
+              23hrs  monthly
+              Previous - 29hrs  monthly
+            </span>
           </div>
         </section>
 
         <section className="bg-red-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Study</h2>
-            0hrs  daily
-            Previous - 1hr  daily
-            4hrs  weekly
-            Previous - 7hrs  weekly
-            13hrs  monthly
-            Previous - 19hrs  monthly
+            <p className="text-3xl">4hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              0hrs  daily
+              Previous - 1hr  daily
+              4hrs  weekly
+              Previous - 7hrs  weekly
+              13hrs  monthly
+              Previous - 19hrs  monthly
+            </span>
           </div>
         </section>
 
         <section className="bg-green-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Exercise</h2>
-            1hr  daily
-            Previous - 1hr  daily
-            4hrs  weekly
-            Previous - 5hrs  weekly
-            11hrs  monthly
-            Previous - 18hrs  monthly
+            <p className="text-3xl">4hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              1hr  daily
+              Previous - 1hr  daily
+              4hrs  weekly
+              Previous - 5hrs  weekly
+              11hrs  monthly
+              Previous - 18hrs  monthly
+            </span>
           </div>
         </section>
 
         <section className="bg-violet-600 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Social</h2>
-            1hr  daily
-            Previous - 3hrs  daily
-            5hrs  weekly
-            Previous - 10hrs  weekly
-            21hrs  monthly
-            Previous - 23hrs  monthly
+            <p className="text-3xl">5hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              1hr  daily
+              Previous - 3hrs  daily
+              5hrs  weekly
+              Previous - 10hrs  weekly
+              21hrs  monthly
+              Previous - 23hrs  monthly
+            </span>
           </div>
         </section>
 
         <section className="bg-yellow-300 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <h2>Self Care</h2>
-            0hrs  daily
-            Previous - 1hr  daily
-            2hrs  weekly
-            Previous - 2hrs  weekly
-            7hrs  monthly
-            Previous - 11hrs  monthly
+            <p className="text-3xl">2hrs</p>
+
+            <span aria-hidden="true" hidden="true">
+              0hrs  daily
+              Previous - 1hr  daily
+              2hrs  weekly
+              Previous - 2hrs  weekly
+              7hrs  monthly
+              Previous - 11hrs  monthly
+            </span>
           </div>
         </section>
       </main>
