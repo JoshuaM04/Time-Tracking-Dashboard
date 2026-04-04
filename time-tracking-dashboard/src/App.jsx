@@ -19,65 +19,77 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Work</h2>
-          5hrs  daily
-          Previous - 7hrs  daily
-          32hrs  weekly
-          Previous - 36hrs  weekly
-          103hrs  monthly
-          Previous - 128hrs  monthly
-        </div>
+        <section className="bg-orange-400 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Work</h2>
+            5hrs  daily
+            Previous - 7hrs  daily
+            32hrs  weekly
+            Previous - 36hrs  weekly
+            103hrs  monthly
+            Previous - 128hrs  monthly
+          </div>
+        </section>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Play</h2>
-          1hr  daily
-          Previous - 2hrs  daily
-          10hrs  weekly
-          Previous - 8hrs  weekly
-          23hrs  monthly
-          Previous - 29hrs  monthly
-        </div>
+        <section className="bg-blue-400 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Play</h2>
+            1hr  daily
+            Previous - 2hrs  daily
+            10hrs  weekly
+            Previous - 8hrs  weekly
+            23hrs  monthly
+            Previous - 29hrs  monthly
+          </div>
+        </section>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Study</h2>
-          0hrs  daily
-          Previous - 1hr  daily
-          4hrs  weekly
-          Previous - 7hrs  weekly
-          13hrs  monthly
-          Previous - 19hrs  monthly
-        </div>
+        <section className="bg-red-400 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Study</h2>
+            0hrs  daily
+            Previous - 1hr  daily
+            4hrs  weekly
+            Previous - 7hrs  weekly
+            13hrs  monthly
+            Previous - 19hrs  monthly
+          </div>
+        </section>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Exercise</h2>
-          1hr  daily
-          Previous - 1hr  daily
-          4hrs  weekly
-          Previous - 5hrs  weekly
-          11hrs  monthly
-          Previous - 18hrs  monthly
-        </div>
+        <section className="bg-green-400 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Exercise</h2>
+            1hr  daily
+            Previous - 1hr  daily
+            4hrs  weekly
+            Previous - 5hrs  weekly
+            11hrs  monthly
+            Previous - 18hrs  monthly
+          </div>
+        </section>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Social</h2>
-          1hr  daily
-          Previous - 3hrs  daily
-          5hrs  weekly
-          Previous - 10hrs  weekly
-          21hrs  monthly
-          Previous - 23hrs  monthly
-        </div>
+        <section className="bg-violet-600 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Social</h2>
+            1hr  daily
+            Previous - 3hrs  daily
+            5hrs  weekly
+            Previous - 10hrs  weekly
+            21hrs  monthly
+            Previous - 23hrs  monthly
+          </div>
+        </section>
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
-          <h2>Self Care</h2>
-          0hrs  daily
-          Previous - 1hr  daily
-          2hrs  weekly
-          Previous - 2hrs  weekly
-          7hrs  monthly
-          Previous - 11hrs  monthly
-        </div>
+        <section className="bg-yellow-300 rounded-xl flex items-end">
+          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white">
+            <h2>Self Care</h2>
+            0hrs  daily
+            Previous - 1hr  daily
+            2hrs  weekly
+            Previous - 2hrs  weekly
+            7hrs  monthly
+            Previous - 11hrs  monthly
+          </div>
+        </section>
       </main>
       
       <footer className="attribution relative bottom-0 text-center -m-5 mt-5 text-white p-[20px] w-[355px]">
