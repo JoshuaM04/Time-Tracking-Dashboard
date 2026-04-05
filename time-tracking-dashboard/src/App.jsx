@@ -7,7 +7,7 @@ export default function Dashboard() {
       <main className="min-h-full grid grid-cols-1 grid-rows-7 gap-4 w-[315px] items-center xl:grid-cols-4 xl:grid-rows-2 xl:w-[1000px] xl:gap-8">
 
         <div className="flex flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white min-w-[315px] min-h-[160px] xl:min-w-[100px] xl:row-span-2 xl:min-h-[422px]">
-          <div className="flex items-center gap-5 bg-indigo-500 rounded-xl p-[20px] m-[-20px] max-h-[90px] xl:min-h-[250px] xl:flex-col xl:items-start xl:p-[30px]">
+          <div className="flex items-center gap-5 bg-indigo-500 rounded-xl p-[20px] m-[-20px] max-h-[90px] xl:min-h-[280px] xl:flex-col xl:items-start xl:p-[30px]">
             <img src={portrait} className="w-[60px] xl:w-[70px] border-[5px] rounded-[50%]" />
             <h1>
               <span className="block text-slate-400">Report for</span>
