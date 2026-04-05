@@ -4,9 +4,9 @@ import btnIcon from './assets/images/icon-ellipsis.svg';
 export default function Dashboard() {
   return (
     <div className="parent-container min-h-screen p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
-      <main className="min-h-full grid grid-cols-1 grid-rows-7 gap-4 w-[315px] xl:grid-cols-4 xl:grid-rows-2 xl:w-[1000px] xl:gap-8">
+      <main className="min-h-full grid grid-cols-1 grid-rows-7 gap-4 w-[315px] items-center xl:grid-cols-4 xl:grid-rows-2 xl:w-[1000px] xl:gap-8">
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white min-w-[315px] xl:min-w-[100px] xl:row-span-2 xl:max-h-[400px]">
+        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white min-w-[315px] xl:min-w-[100px] xl:row-span-2 xl:min-h-[422px]">
           <div className="flex items-center gap-5 mb-[2rem] bg-indigo-500 rounded-xl p-[20px] m-[-20px] xl:min-h-[250px] xl:flex-col xl:items-start xl:p-[30px]">
             <img src={portrait} className="w-[70px] border-[5px] rounded-[50%]" />
             <h1>
@@ -22,8 +22,8 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <section className="bg-orange-400 rounded-xl flex items-end bg-[url(assets/images/icon-work.svg)] bg-no-repeat bg-position-[top_right_15px] xl:min-w-[100px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-orange-400 rounded-xl flex items-end bg-[url(assets/images/icon-work.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Work</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
@@ -44,8 +44,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="bg-blue-400 rounded-xl flex items-end bg-[url(assets/images/icon-play.svg)] bg-no-repeat bg-position-[top_right_15px] xl:min-w-[100px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-blue-400 rounded-xl flex items-end bg-[url(assets/images/icon-play.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Play</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
@@ -66,8 +66,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="bg-red-400 rounded-xl flex items-end bg-[url(assets/images/icon-study.svg)] bg-no-repeat bg-position-[top_right_15px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-red-400 rounded-xl flex items-end bg-[url(assets/images/icon-study.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Study</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
@@ -88,8 +88,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="bg-green-400 rounded-xl flex items-end bg-[url(assets/images/icon-exercise.svg)] bg-no-repeat bg-position-[top_right_15px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-green-400 rounded-xl flex items-end bg-[url(assets/images/icon-exercise.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Exercise</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
@@ -110,8 +110,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="bg-violet-600 rounded-xl flex items-end bg-[url(assets/images/icon-social.svg)] bg-no-repeat bg-position-[top_right_15px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-violet-600 rounded-xl flex items-end bg-[url(assets/images/icon-social.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Social</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
@@ -132,8 +132,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="bg-yellow-300 rounded-xl flex items-end bg-[url(assets/images/icon-self-care.svg)] bg-no-repeat bg-position-[top_right_15px] xl:max-h-[200px]">
-          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[150px] xl:flex-col xl:min-h-[140px]">
+        <section className="bg-yellow-300 rounded-xl flex items-end bg-[url(assets/images/icon-self-care.svg)] bg-no-repeat bg-position-[top_right_15px] min-h-[160px] xl:min-w-[100px] xl:min-h-[195px]">
+          <div className="flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[110px] xl:flex-col xl:min-h-[140px]">
             <div className="flex justify-between">
               <h2 className="font-medium">Self Care</h2>
               <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
