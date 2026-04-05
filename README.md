@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile Layout](src/assets/mobile_solution.png)
-![Desktop Layout](src/assets/desktop_solution.png)
+![Mobile Layout](time-tracking-dashboard/src/assets/mobile_solution.png)
+![Desktop Layout](time-tracking-dashboard/src/assets/desktop_solution.png)
 
 
 ### Links
