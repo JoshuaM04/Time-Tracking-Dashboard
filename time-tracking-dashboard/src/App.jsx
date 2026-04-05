@@ -1,4 +1,5 @@
 import portrait from './assets/images/image-jeremy.png';
+import btnIcon from './assets/images/icon-ellipsis.svg';
 
 export default function Dashboard() {
   return (
@@ -20,9 +21,15 @@ export default function Dashboard() {
         </div>
 
         <section className="bg-orange-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Work</h2>
-            <p className="text-3xl">32hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Work</h2>
+              <p className="text-3xl">32hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 36hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               5hrs  daily
@@ -36,9 +43,15 @@ export default function Dashboard() {
         </section>
 
         <section className="bg-blue-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Play</h2>
-            <p className="text-3xl">10hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Play</h2>
+              <p className="text-3xl">10hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 8hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               1hr  daily
@@ -52,9 +65,15 @@ export default function Dashboard() {
         </section>
 
         <section className="bg-red-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Study</h2>
-            <p className="text-3xl">4hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Study</h2>
+              <p className="text-3xl">4hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 7hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               0hrs  daily
@@ -68,9 +87,15 @@ export default function Dashboard() {
         </section>
 
         <section className="bg-green-400 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Exercise</h2>
-            <p className="text-3xl">4hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Exercise</h2>
+              <p className="text-3xl">4hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 5hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               1hr  daily
@@ -84,9 +109,15 @@ export default function Dashboard() {
         </section>
 
         <section className="bg-violet-600 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Social</h2>
-            <p className="text-3xl">5hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Social</h2>
+              <p className="text-3xl">5hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 10hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               1hr  daily
@@ -100,9 +131,15 @@ export default function Dashboard() {
         </section>
 
         <section className="bg-yellow-300 rounded-xl flex items-end">
-          <div className="box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
-            <h2>Self Care</h2>
-            <p className="text-3xl">2hrs</p>
+          <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
+            <div>
+              <h2>Self Care</h2>
+              <p className="text-3xl">2hrs</p>
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <button className="min-h-[24px]"><img src={btnIcon} /></button>
+              <p className="text-slate-300">Last Week - 2hrs</p>
+            </div>
 
             <span aria-hidden="true" hidden="true">
               0hrs  daily
