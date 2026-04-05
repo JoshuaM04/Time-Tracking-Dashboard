@@ -10,13 +10,13 @@ export default function Dashboard() {
             <img src={portrait} className="w-[70px] border-[5px] rounded-[50%]" />
             <h1>
               <span className="block text-slate-400">Report for</span>
-              Jeremy Robson
+              <span className="text-2xl">Jeremy Robson</span>
             </h1>
           </div>
           <div className="flex justify-between">
-            <span className="block text-slate-400">Daily</span> 
-            <span className="font-medium">Weekly</span> 
-            <span className="block text-slate-400">Monthly</span>
+            <button className="block text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Daily</button> 
+            <button className="font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Weekly</button> 
+            <button className="block text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Monthly</button>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ export default function Dashboard() {
               <p className="text-3xl">32hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button type="button" className="min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button type="button" className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 36hrs</p>
             </div>
 
@@ -49,7 +49,7 @@ export default function Dashboard() {
               <p className="text-3xl">10hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button className="min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button className="min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 8hrs</p>
             </div>
 
@@ -71,7 +71,7 @@ export default function Dashboard() {
               <p className="text-3xl">4hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 7hrs</p>
             </div>
 
@@ -93,7 +93,7 @@ export default function Dashboard() {
               <p className="text-3xl">4hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 5hrs</p>
             </div>
 
@@ -115,7 +115,7 @@ export default function Dashboard() {
               <p className="text-3xl">5hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 10hrs</p>
             </div>
 
@@ -137,7 +137,7 @@ export default function Dashboard() {
               <p className="text-3xl">2hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
+              <button className="min-h-[24px] min-h-[24px] hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg" aria-label="drop-down menu"><img src={btnIcon} /></button>
               <p className="text-slate-300 pr-[5px]">Last Week - 2hrs</p>
             </div>
 
