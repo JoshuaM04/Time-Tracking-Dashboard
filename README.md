@@ -25,9 +25,11 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
+### Mobile Layout
 
 ![Mobile Layout](time-tracking-dashboard/src/assets/mobile_solution.png)
+
+### Desktop Layout
 ![Desktop Layout](time-tracking-dashboard/src/assets/desktop_solution.png)
 
 
