@@ -23,7 +23,7 @@ export default function Dashboard() {
         <section className="bg-orange-400 rounded-xl flex items-end bg-[url(assets/images/icon-work.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Work</h2>
+              <h2 className="font-medium">Work</h2>
               <p className="text-3xl">32hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
@@ -45,7 +45,7 @@ export default function Dashboard() {
         <section className="bg-blue-400 rounded-xl flex items-end bg-[url(assets/images/icon-play.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Play</h2>
+              <h2 className="font-medium">Play</h2>
               <p className="text-3xl">10hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
@@ -67,7 +67,7 @@ export default function Dashboard() {
         <section className="bg-red-400 rounded-xl flex items-end bg-[url(assets/images/icon-study.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Study</h2>
+              <h2 className="font-medium">Study</h2>
               <p className="text-3xl">4hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
@@ -89,7 +89,7 @@ export default function Dashboard() {
         <section className="bg-green-400 rounded-xl flex items-end bg-[url(assets/images/icon-exercise.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Exercise</h2>
+              <h2 className="font-medium">Exercise</h2>
               <p className="text-3xl">4hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
@@ -111,7 +111,7 @@ export default function Dashboard() {
         <section className="bg-violet-600 rounded-xl flex items-end bg-[url(assets/images/icon-social.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Social</h2>
+              <h2 className="font-medium">Social</h2>
               <p className="text-3xl">5hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
@@ -133,7 +133,7 @@ export default function Dashboard() {
         <section className="bg-yellow-300 rounded-xl flex items-end bg-[url(assets/images/icon-self-care.svg)] bg-no-repeat bg-position-[top_right_15px]">
           <div className="flex justify-between box bg-indigo-900 rounded-xl p-[20px] text-white w-full min-h-[135px]">
             <div>
-              <h2>Self Care</h2>
+              <h2 className="font-medium">Self Care</h2>
               <p className="text-3xl">2hrs</p>
             </div>
             <div className="flex flex-col items-end gap-1">
