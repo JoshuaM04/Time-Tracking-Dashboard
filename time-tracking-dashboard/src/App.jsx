@@ -6,9 +6,9 @@ export default function Dashboard() {
     <div className="parent-container min-h-screen p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
       <main className="min-h-full grid grid-cols-1 grid-rows-7 gap-4 w-[315px] items-center xl:grid-cols-4 xl:grid-rows-2 xl:w-[1000px] xl:gap-8">
 
-        <div className="box bg-indigo-900 rounded-xl p-[20px] text-white min-w-[315px] xl:min-w-[100px] xl:row-span-2 xl:min-h-[422px]">
-          <div className="flex items-center gap-5 mb-[2rem] bg-indigo-500 rounded-xl p-[20px] m-[-20px] xl:min-h-[250px] xl:flex-col xl:items-start xl:p-[30px]">
-            <img src={portrait} className="w-[70px] border-[5px] rounded-[50%]" />
+        <div className="flex flex-col justify-between box bg-indigo-900 rounded-xl p-[20px] text-white min-w-[315px] min-h-[160px] xl:min-w-[100px] xl:row-span-2 xl:min-h-[422px]">
+          <div className="flex items-center gap-5 bg-indigo-500 rounded-xl p-[20px] m-[-20px] xl:min-h-[250px] xl:flex-col xl:items-start xl:p-[30px]">
+            <img src={portrait} className="w-[60px] xl:w-[70px] border-[5px] rounded-[50%]" />
             <h1>
               <span className="block text-slate-400">Report for</span>
               <span className="text-2xl xl:text-3xl">Jeremy Robson</span>
@@ -16,9 +16,9 @@ export default function Dashboard() {
           </div>
 
           <div className="flex justify-between xl:flex-col xl:items-start">
-            <button className="block text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Daily</button> 
+            <button className="text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Daily</button> 
             <button className="font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Weekly</button> 
-            <button className="block text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Monthly</button>
+            <button className="text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg">Monthly</button>
           </div>
         </div>
 
