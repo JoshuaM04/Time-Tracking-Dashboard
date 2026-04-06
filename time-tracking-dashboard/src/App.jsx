@@ -58,8 +58,12 @@ export default function Dashboard() {
             )
           })
         }
-
       </main>
+      
+      <footer className="attribution relative bottom-0 text-center -m-5 mt-5 text-white p-[20px] w-[355px] xl:absolute">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge"><span className="font-medium text-blue-200">Frontend Mentor</span></a></p>
+        <p>Coded by <a href="#"><span className="font-medium text-blue-200">Joshua Martinez</span></a></p>
+      </footer>
     </div>
   )
 }
