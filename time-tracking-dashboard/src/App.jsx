@@ -7,13 +7,10 @@ export default function Dashboard() {
   const bgColor = ["bg-orange-400", "bg-blue-400", "bg-red-400", "bg-green-400", "bg-violet-600", "bg-yellow-300"]
   const bgImage =["bg-[url(assets/images/icon-work.svg)]", "bg-[url(assets/images/icon-play.svg)]", "bg-[url(assets/images/icon-study.svg)]", "bg-[url(assets/images/icon-exercise.svg)]", "bg-[url(assets/images/icon-social.svg)]", "bg-[url(assets/images/icon-self-care.svg)]"];
   const [boxes, setBoxes] = useState(data);
-  const [isDailySelected, setIsDailySelected] = useState(false);
-  const [isWeeklySelected, setIsWeeklySelected] = useState(true);
+  const [activePeriod, setActivePeriod] = useState('weekly');
   let count = -1;
 
   function PeriodSelector() {
-    const [activePeriod, setActivePeriod] = useState('daily');
-
     return (
       <div className="flex justify-between xl:flex-col xl:items-start">
         <SelectorButton
@@ -76,8 +73,8 @@ export default function Dashboard() {
                   </div>
 
                   <div className="flex flex-row justify-between items-center xl:flex-col xl:items-start gap-1">
-                    <p className="text-3xl xl:text-5xl">{isWeeklySelected ? item.timeframes.weekly.current : (isDailySelected ? item.timeframes.daily.current : item.timeframes.monthly.current)}hrs</p>
-                    <p className="text-slate-300 pr-[5px]">Last Week - {isWeeklySelected ? item.timeframes.weekly.previous : (isDailySelected ? item.timeframes.daily.previous : item.timeframes.monthly.previous)}hrs</p>
+                    <p className="text-3xl xl:text-5xl">{activePeriod === 'weekly' ? item.timeframes.weekly.current : (activePeriod === 'daily' ? item.timeframes.daily.current : item.timeframes.monthly.current)}hrs</p>
+                    <p className="text-slate-300 pr-[5px]">Last Week - {activePeriod === 'weekly' ? item.timeframes.weekly.previous : (activePeriod === 'daily' ? item.timeframes.daily.previous : item.timeframes.monthly.previous)}hrs</p>
                   </div>
                 </div>
               </section>
