@@ -8,6 +8,9 @@ export default function Dashboard() {
   const bgImage =["bg-[url(assets/images/icon-work.svg)]", "bg-[url(assets/images/icon-play.svg)]", "bg-[url(assets/images/icon-study.svg)]", "bg-[url(assets/images/icon-exercise.svg)]", "bg-[url(assets/images/icon-social.svg)]", "bg-[url(assets/images/icon-self-care.svg)]"];
   const [boxes, setBoxes] = useState(data);
   const [display, setDisplay] = useState("timeframes.weekly.current");
+  const [isDailySelected, setIsDailySelected] = useState(false);
+  const [isWeeklySelected, setIsWeeklySelected] = useState(true);
+  const [isMonthlySelected, setIsMonthlySelected] = useState(false);
   const [dailyStyle, setDailyStyle] = useState("daily-btn text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
   const [weeklyStyle, setWeeklyStyle] = useState("weekly-btn text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
   const [monthlyStyle, setMonthlyStyle] = useState("daily-btn text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
@@ -16,22 +19,37 @@ export default function Dashboard() {
   function handleDisplay(displayType) {
     if (displayType === "daily") {
       setDailyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+      setIsDailySelected(true);
 
       // Reset other styles
       setWeeklyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
       setMonthlyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+
+      // Reset selection state
+      setIsWeeklySelected(false);
+      setIsMonthlySelected(false);
     } else if (displayType === "weekly") {
       setWeeklyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+      setIsWeeklySelected(true);
 
       // Reset other styles
       setDailyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
       setMonthlyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+
+      // Reset selection state
+      setIsDailySelected(false);
+      setIsMonthlySelected(false);
     } else if (displayType === "monthly") {
       setMonthlyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+      setIsMonthlySelected(true);
 
       // Reset other styles
       setDailyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
       setWeeklyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
+
+      // Reset selection state
+      setIsDailySelected(false);
+      setIsWeeklySelected(false);
     }
   }
 
@@ -68,18 +86,9 @@ export default function Dashboard() {
                   </div>
 
                   <div className="flex flex-row justify-between items-center xl:flex-col xl:items-start gap-1">
-                    <p className="text-3xl xl:text-5xl">{item.timeframes.weekly.current}hrs</p>
-                    <p className="text-slate-300 pr-[5px]">Last Week - {item.timeframes.weekly.previous}hrs</p>
+                    <p className="text-3xl xl:text-5xl">{isWeeklySelected ? item.timeframes.weekly.current : (isDailySelected ? item.timeframes.daily.current : item.timeframes.monthly.current)}hrs</p>
+                    <p className="text-slate-300 pr-[5px]">Last Week - {isWeeklySelected ? item.timeframes.weekly.previous : (isDailySelected ? item.timeframes.daily.previous : item.timeframes.monthly.previous)}hrs</p>
                   </div>
-
-                  <span aria-hidden="true" hidden={true}>
-                    5hrs  daily
-                    Previous - 7hrs  daily
-                    32hrs  weekly
-                    Previous - 36hrs  weekly
-                    103hrs  monthly
-                    Previous - 128hrs  monthly
-                  </span>
                 </div>
               </section>
             )
