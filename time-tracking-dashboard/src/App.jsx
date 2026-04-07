@@ -7,53 +7,47 @@ export default function Dashboard() {
   const bgColor = ["bg-orange-400", "bg-blue-400", "bg-red-400", "bg-green-400", "bg-violet-600", "bg-yellow-300"]
   const bgImage =["bg-[url(assets/images/icon-work.svg)]", "bg-[url(assets/images/icon-play.svg)]", "bg-[url(assets/images/icon-study.svg)]", "bg-[url(assets/images/icon-exercise.svg)]", "bg-[url(assets/images/icon-social.svg)]", "bg-[url(assets/images/icon-self-care.svg)]"];
   const [boxes, setBoxes] = useState(data);
-  const [display, setDisplay] = useState("timeframes.weekly.current");
   const [isDailySelected, setIsDailySelected] = useState(false);
   const [isWeeklySelected, setIsWeeklySelected] = useState(true);
-  const [isMonthlySelected, setIsMonthlySelected] = useState(false);
-  const [dailyStyle, setDailyStyle] = useState("daily-btn text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-  const [weeklyStyle, setWeeklyStyle] = useState("weekly-btn text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-  const [monthlyStyle, setMonthlyStyle] = useState("daily-btn text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
   let count = -1;
 
-  function handleDisplay(displayType) {
-    if (displayType === "daily") {
-      setDailyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setIsDailySelected(true);
+  function PeriodSelector() {
+    const [activePeriod, setActivePeriod] = useState('daily');
 
-      // Reset other styles
-      setWeeklyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setMonthlyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-
-      // Reset selection state
-      setIsWeeklySelected(false);
-      setIsMonthlySelected(false);
-    } else if (displayType === "weekly") {
-      setWeeklyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setIsWeeklySelected(true);
-
-      // Reset other styles
-      setDailyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setMonthlyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-
-      // Reset selection state
-      setIsDailySelected(false);
-      setIsMonthlySelected(false);
-    } else if (displayType === "monthly") {
-      setMonthlyStyle("text-white font-medium hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setIsMonthlySelected(true);
-
-      // Reset other styles
-      setDailyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-      setWeeklyStyle("text-slate-400 hover:bg-violet-500 active:bg-violet-800 p-[5px] rounded-lg");
-
-      // Reset selection state
-      setIsDailySelected(false);
-      setIsWeeklySelected(false);
-    }
+    return (
+      <div className="flex justify-between xl:flex-col xl:items-start">
+        <SelectorButton
+          active={activePeriod === 'daily'}
+          onClick={() => setActivePeriod('daily')}
+        >
+          Daily
+        </SelectorButton>
+        <SelectorButton
+          active={activePeriod === 'weekly'}
+          onClick={() => setActivePeriod('weekly')}
+        >
+          Weekly
+        </SelectorButton>
+        <SelectorButton
+          active={activePeriod === 'monthly'}
+          onClick={() => setActivePeriod('monthly')}
+        >
+          Monthly
+        </SelectorButton>
+      </div>
+    )
   }
 
-  console.log("Value: " + boxes[0].timeframes.weekly.current);
+  function SelectorButton({active, onClick, children}) {
+    return (
+      <button
+        onClick={onClick}
+        className={`p-5px hover:bg-violet-500 ${active ? 'text-white font-medium' : 'text-slate-400'}`}
+      >
+        {children}
+      </button>
+    )
+  }
 
   return (
     <div className="parent-container min-h-screen p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
@@ -66,12 +60,8 @@ export default function Dashboard() {
               <span className="text-2xl xl:text-3xl">Jeremy Robson</span>
             </h1>
           </div>
-
-          <div className="flex justify-between xl:flex-col xl:items-start">
-            <button className={dailyStyle} onClick={() => handleDisplay("daily")}>Daily</button> 
-            <button className={weeklyStyle} onClick={() => handleDisplay("weekly")}>Weekly</button> 
-            <button className={monthlyStyle} onClick={() => handleDisplay("monthly")}>Monthly</button>
-          </div>
+          
+          <PeriodSelector />
         </div>
 
         {
