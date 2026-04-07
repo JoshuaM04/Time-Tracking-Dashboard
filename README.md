@@ -42,7 +42,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Tailwind CSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -50,32 +50,65 @@ Users should be able to:
 
 
 ### What I learned
-
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+<div className="flex items-center gap-5 bg-indigo-500 rounded-xl p-[20px] m-[-20px] max-h-[90px] xl:min-h-[280px] xl:flex-col xl:items-start xl:p-[30px]">
+.
+.
+.
+</div>
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+function PeriodSelector() {
+    return (
+      <div className="flex justify-between xl:flex-col xl:items-start">
+        <SelectorButton
+          active={activePeriod === 'daily'}
+          onClick={() => setActivePeriod('daily')}
+        >
+          Daily
+        </SelectorButton>
+        <SelectorButton
+          active={activePeriod === 'weekly'}
+          onClick={() => setActivePeriod('weekly')}
+        >
+          Weekly
+        </SelectorButton>
+        <SelectorButton
+          active={activePeriod === 'monthly'}
+          onClick={() => setActivePeriod('monthly')}
+        >
+          Monthly
+        </SelectorButton>
+      </div>
+    )
+  }
 
+  function SelectorButton({active, onClick, children}) {
+    return (
+      <button
+        onClick={onClick}
+        className={`p-5px hover:bg-violet-500 ${active ? 'text-white font-medium' : 'text-slate-400'}`}
+      >
+        {children}
+      </button>
+    )
+  }
+.
+.
+.
+  <PeriodSelector />
+```
+In this project, I learned a lot more about Tailwind CSS utility classes and how I can make an element ignore the styling properties of its parent element. Furthermore, I learned more about how props work in React and how you can add your own custom components or rather elements for rendering. I gained a lot of support from the FrontEnd mentor community and was able to refine my program to be more efficient as well as follow a more proper structure.
 
 ### Continued development
-
+Going forward, I would like to make my program more efficient from the start rather than making "code bloat" first before cutting down later. This will help me save time and avoid any potential bugs. I would also like to learn about possible animations I can apply to my website such as allowing users to move the boxes to different cells within the grid.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Tailwind CSS Docs](https://tailwindcss.com/docs/detecting-classes-in-source-files) - This helped with me with updating the styles for the boxes when using a .map() callback function to render them to the page.
+- [StackOverflow Forum](https://stackoverflow.com/questions/46530534/can-a-javascript-ternary-operator-support-3-conditions) - This forum helped me understand how I could employ a ternary operator with 3 expressions to help with conditional rendering of 3 values.
+- [StackOverflow Forum](https://stackoverflow.com/questions/4296530/ignore-parent-padding) - This forum helped me understand styling techniques where I would like a child element to ignore the styling properties assigned by it's parent such as padding.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@JoshuaM04](https://www.frontendmentor.io/profile/@JoshuaM04)
