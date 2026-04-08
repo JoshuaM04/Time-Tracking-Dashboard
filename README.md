@@ -58,45 +58,45 @@ Users should be able to:
 </div>
 ```
 ```js
-function PeriodSelector() {
-    return (
-      <div className="flex justify-between xl:flex-col xl:items-start">
-        <SelectorButton
-          active={activePeriod === 'daily'}
-          onClick={() => setActivePeriod('daily')}
-        >
-          Daily
-        </SelectorButton>
-        <SelectorButton
-          active={activePeriod === 'weekly'}
-          onClick={() => setActivePeriod('weekly')}
-        >
-          Weekly
-        </SelectorButton>
-        <SelectorButton
-          active={activePeriod === 'monthly'}
-          onClick={() => setActivePeriod('monthly')}
-        >
-          Monthly
-        </SelectorButton>
-      </div>
-    )
-  }
-
-  function SelectorButton({active, onClick, children}) {
-    return (
-      <button
-        onClick={onClick}
-        className={`p-5px hover:bg-violet-500 ${active ? 'text-white font-medium' : 'text-slate-400'}`}
+function PeriodSelector({value, onChange}) {
+  return (
+    <div className="flex justify-between xl:flex-col xl:items-start">
+      <SelectorButton
+        active={value === 'daily'}
+        onClick={() => onChange('daily')}
       >
-        {children}
-      </button>
-    )
-  }
+        Daily
+      </SelectorButton>
+      <SelectorButton
+        active={value === 'weekly'}
+        onClick={() => onChange('weekly')}
+      >
+        Weekly
+      </SelectorButton>
+      <SelectorButton
+        active={value === 'monthly'}
+        onClick={() => onChange('monthly')}
+      >
+        Monthly
+      </SelectorButton>
+    </div>
+  )
+}
+
+function SelectorButton({active, onClick, children}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`p-[5px] hover:bg-violet-500 rounded-lg ${active ? 'text-white font-medium' : 'text-slate-400'}`}
+    >
+      {children}
+    </button>
+  )
+}
 .
 .
 .
-  <PeriodSelector />
+  <PeriodSelector value={activePeriod} onChange={setActivePeriod}/>
 ```
 In this project, I learned a lot more about Tailwind CSS utility classes and how I can make an element ignore the styling properties of its parent element. Furthermore, I learned more about how props work in React and how you can add your own custom components or rather elements for rendering. I gained a lot of support from the FrontEnd mentor community and was able to refine my program to be more efficient as well as follow a more proper structure.
 
