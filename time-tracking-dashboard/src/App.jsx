@@ -3,48 +3,48 @@ import btnIcon from './assets/images/icon-ellipsis.svg';
 import data from "../data.json";
 import { useState } from 'react';
 
+function PeriodSelector({value, onChange}) {
+  return (
+    <div className="flex justify-between xl:flex-col xl:items-start">
+      <SelectorButton
+        active={value === 'daily'}
+        onClick={() => onChange('daily')}
+      >
+        Daily
+      </SelectorButton>
+      <SelectorButton
+        active={value === 'weekly'}
+        onClick={() => onChange('weekly')}
+      >
+        Weekly
+      </SelectorButton>
+      <SelectorButton
+        active={value === 'monthly'}
+        onClick={() => onChange('monthly')}
+      >
+        Monthly
+      </SelectorButton>
+    </div>
+  )
+}
+
+function SelectorButton({active, onClick, children}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`p-[5px] hover:bg-violet-500 rounded-lg ${active ? 'text-white font-medium' : 'text-slate-400'}`}
+    >
+      {children}
+    </button>
+  )
+}
+
 export default function Dashboard() {
   const bgColor = ["bg-orange-400", "bg-blue-400", "bg-red-400", "bg-green-400", "bg-violet-600", "bg-yellow-300"]
   const bgImage =["bg-[url(assets/images/icon-work.svg)]", "bg-[url(assets/images/icon-play.svg)]", "bg-[url(assets/images/icon-study.svg)]", "bg-[url(assets/images/icon-exercise.svg)]", "bg-[url(assets/images/icon-social.svg)]", "bg-[url(assets/images/icon-self-care.svg)]"];
   const [boxes, setBoxes] = useState(data);
   const [activePeriod, setActivePeriod] = useState('weekly');
   let count = -1;
-
-  function PeriodSelector() {
-    return (
-      <div className="flex justify-between xl:flex-col xl:items-start">
-        <SelectorButton
-          active={activePeriod === 'daily'}
-          onClick={() => setActivePeriod('daily')}
-        >
-          Daily
-        </SelectorButton>
-        <SelectorButton
-          active={activePeriod === 'weekly'}
-          onClick={() => setActivePeriod('weekly')}
-        >
-          Weekly
-        </SelectorButton>
-        <SelectorButton
-          active={activePeriod === 'monthly'}
-          onClick={() => setActivePeriod('monthly')}
-        >
-          Monthly
-        </SelectorButton>
-      </div>
-    )
-  }
-
-  function SelectorButton({active, onClick, children}) {
-    return (
-      <button
-        onClick={onClick}
-        className={`p-5px hover:bg-violet-500 ${active ? 'text-white font-medium' : 'text-slate-400'}`}
-      >
-        {children}
-      </button>
-    )
-  }
 
   return (
     <div className="parent-container min-h-screen p-[20px] pt-[60px] bg-gray-900 min-w-screen flex flex-col items-center justify-center">
@@ -58,7 +58,7 @@ export default function Dashboard() {
             </h1>
           </div>
           
-          <PeriodSelector />
+          <PeriodSelector value={activePeriod} onChange={setActivePeriod}/>
         </div>
 
         {
